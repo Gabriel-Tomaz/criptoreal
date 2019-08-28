@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head >
+
+<head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Home</title>
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body onload="carregaJson()">
     <div class="main">
         <!--Menu-->
@@ -33,13 +35,20 @@
                 </li>
                 <li class="menu-item">
                     <a href="index.html">Sobre</a>
-                </li>   
+                </li>
             </ul>
         </nav>
         <!--Moedas-->
         <div class="main-moedas" id="moeda">
-
+            <table class="result">
+                <thead>
+                    <td>Moeda</td>
+                    <td>Preço</td> 
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </div>
 </body>
+
 </html>

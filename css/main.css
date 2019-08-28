@@ -125,7 +125,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
 }
 .result{
     width: 715px;
