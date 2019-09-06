@@ -30,6 +30,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
+    background-color: #F5F5F5;
 }
 .change{
     left: 0;
@@ -73,9 +75,11 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    z-index: 8;
 }
 .logo img{
     max-width: 100%;
+    z-index: 8;
 }
 /*Home*/
 .main-home{
@@ -128,9 +132,10 @@
     align-content: flex-start;
 }
 .result{
-    width: 715px;
+    width: 70%;
     text-align: center;
     border-collapse: collapse;
+    margin-top: 50px;
 }
 .result td{
     height: 50px;
@@ -154,6 +159,7 @@
         justify-content: center;
         align-content: space-around;
         z-index: 10;
+        background-color: #F5F5F5;
     }
     .linha{
         width: 100%;
