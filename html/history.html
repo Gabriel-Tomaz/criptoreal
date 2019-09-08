@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/2d7d674aab.js"></script>
 </head>
 
-<body onload="carregaJson(),animabtn()">
+<body onload="animabtn()">
     <div class="main">
         <!--Menu-->
         <nav class="navbar" id="navbar">
@@ -43,10 +43,11 @@
         </nav>
         <!--Moedas-->
         <div class="main-moedas" id="moeda">
-            <div class="pesquisa">
-                    <input class="n-moedas" id="n-moedas" placeholder="Quantas moedas ?" value="10">
-                    <div class="icone-p" onclick="carregaJson()">
-                        <i class="fas fa-search-dollar"></i>
+            <div class="pesquisa-data">
+                    <input class="n-datas" id="n-datas" placeholder="0000-00-00">
+                    <input class="n-moedas-d" id="n-moedas-d" value="10">
+                    <div class="icone-p" onclick="carregaJsonDatas()">
+                            <i class="fas fa-search-dollar"></i>
                     </div>
             </div>
             <table class="result">
