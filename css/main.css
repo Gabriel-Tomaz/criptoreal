@@ -92,26 +92,40 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
+}
+.logo-home{
+    width: 25%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.logo-home img{
+    max-width: 100%;
 }
 .main-home h1{
     width: 100%;
     margin-top: 10px;
+    text-align: center;
 }
 .main-home h2{
     width: 100%;
+    text-align: center;
 }
 .main-home p{
     width: 100%;
     margin-top:10px;
-    font-size: 14px;
+    font-size: 16px;
     color: #616161;
+    text-align: center;
 }
 .bt-home{
-    width: 90px;
-    height: 42px;
-    background-color: #FF5722;
+    width: 100px;
+    height: 48px;
     border-radius: 4px;
     margin-top: 10px;
     display: flex;
@@ -119,8 +133,28 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
     color:white;
     cursor: pointer;
+    background-color: #FF5722;
+    transition: .6s;
+    overflow: hidden;
+}
+.bt-home:focus{
+    outline: none;
+}
+.bt-home:hover{
+    background-color: #FF7043;
+}
+.bt-home:hover::before{
+    transform: translateX(60px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+.bt-home:hover::after{
+    transform: translateX(60px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
 }
 .main-home a{
     text-decoration: none;
@@ -343,24 +377,34 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
+        align-content:flex-start;
     }
-    .main-home h1{
-        width: 90%;
-        margin-top: 8px;
+    .logo-home{
+        width: 50%;
+        height: 175px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .logo-home img{
+        max-width: 100%;
     }
     .main-home h2{
-        width: 100%;
+        width: 90%;
+        text-align: center;
     }
     .main-home p{
-        width: 100%;
+        width: 90%;
         margin-top:18px;
-        font-size: 14px;
+        font-size: 18px;
         color: #616161;
+        text-align: justify;
     }
     .bt-home{
-        width: 90px;
-        height: 42px;
+        width: 130px;
+        height: 62px;
         background-color: #FF5722;
         border-radius: 4px;
         margin-top: 18px;
@@ -372,7 +416,6 @@ body{
         color:white;
         cursor: pointer;
         position: relative;
-        left: -37%;
         z-index: 9;
     }
     /*Paginas das moedas-r*/
@@ -383,7 +426,7 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
+        align-content: flex-start;
     }
     .pesquisa{
         width: 95%;
